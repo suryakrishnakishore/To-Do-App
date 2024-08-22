@@ -1,0 +1,239 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+}
+
+.list-item{
+    background-color: white;
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30%;
+    padding: 12px;
+    padding-bottom: 0;
+}
+.todo-container {
+    width: 1950px; height: 100vh;
+    background-color: rgb(210, 230, 248);
+}
+.list-items{
+    display: flex;
+    flex-direction: row;
+    width: 400px; 
+    margin: 10px, 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headText {
+    text-align: center;
+}
+.buttons-container{
+    margin-left: 30%;
+    height: 70px; width: 280px;
+    box-sizing: border-box;
+}
+.btn1, .btn2, .btn3{
+    margin: 15px;
+    margin-top: 0; margin-bottom: 20px;
+    height: 40px; width: 100px;
+    border-radius: 23px;
+    background-color: transparent;
+}
+.btn2 {
+    background-color: red;
+    border: red;
+}
+.btn3 {
+    border-color: greenyellow;
+    color: green;
+}
+.btn3:hover{
+    color: black;
+    font-size: 22px;
+    background-color: greenyellow;
+    border-color: transparent;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.btn4{
+    background-color: transparent;
+    height: 50px; width: 40px;
+    border: transparent;
+}
+.btn4:hover{
+    cursor: pointer;
+    height: 53px; width: 41px;
+}
+.btn1:hover{
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    transition: 0.5s;
+    height: 45px; width: 110px;
+    cursor: pointer;
+}
+.btn2:hover{
+    box-shadow: rgba(243, 39, 39, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    transition: 0.5s;
+    height: 45px; width: 110px;
+    cursor: pointer;
+}
+input {
+    margin: 12px 0;
+    padding: 12px 16px;
+    border-radius: 12px;
+    border: 1.5px solid rgb(230, 232, 236);
+    box-sizing: border-box;
+}
+.tick{
+    height: 30px; width: 30px;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Modal */
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    width: 100%; height: 100vh;
+    flex-direction: column;
+    justify-content: center; align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal {
+    width: 500px;
+    background-color: white;
+    padding: 42px;
+    border-radius: 11px;
+    box-shadow: rgba(0, 0, 0, 0.06) 0 6px 24px 0, rgba(0, 0, 0, 0.09) 0 0 0 1px;
+}
+
+.form-title-container {
+    display: flex;
+    justify-content: space-between;
+}
+.form-title-container button {
+    border: none;
+    background-color: transparent;
+}
+
+.modal form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.modal label {
+    font-size: 30px;
+}
+
+.submit {
+    border-color: greenyellow;
+    color: green;
+    box-sizing: border-box;
+}
+.submit:hover{
+    color: black;
+    font-size: 22px;
+    background-color: greenyellow;
+    border-color: transparent;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/*  Auth */
+.auth-container {
+    width: 1900px;
+}
+.auth-container-box {
+    width: 1900px;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+}
+.auth-container-box button {
+    cursor: pointer;
+    border: 0;
+    border-radius: 4px;
+    font-weight: 600;
+    margin: 0 10px;
+    width: 200px;
+    padding: 10px 0;
+    box-shadow: 0 0 20px rgba(104, 85, 224, 0.2);
+    transition: 0.4s;
+}
+
+.reg {
+    color: white;
+    background-color: rgba(104, 85, 224, 1);
+    
+}
+
+.log {
+    color: rgb(104, 85, 224);
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(104, 85, 224, 1);
+    
+}
+
+.auth-container-box button:hover {
+    color: white;
+    box-shadow: 0 0 20px rgba(104, 85, 224, 0.6);
+    background-color: rgba(104, 85, 224, 1);
+}
+
+.auth-container-box form {
+    height: 80vh;
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+}
+
+.auth-container-box input {
+    width: 600px;
+}
+
+.auth-container-box p {
+    color: red;
+    font-size: 20px;
+    font-weight: 700;
+}
+.form-btns{
+    margin-top: 20px;
+    display: flex; flex-direction: row;
+    gap: 30px;
+}
+
+.auth-options {
+    height: 100vh;
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+}
+.auth-options h1 {
+    color: white;
+    font-style: italic;
+
+}
+
+.auth-container-box form h2 {
+    color: white;
+    font-style: italic;
+}
+
+.outer-box{
+    width: 200px; height: 15px;
+    background-color: rgb(216, 216, 216);
+    border-radius: 7px;
+    overflow: hidden;
+}
+.inner-box{
+    height: 14px;
+}
